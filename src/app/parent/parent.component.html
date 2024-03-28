@@ -1,0 +1,6 @@
+<div class="parent-container">
+    <app-child [message]="greetingMessage"></app-child>
+    <app-child (messageEvent)="receiveMessage($event)"></app-child>
+    <p class="text">Message from Child: {{ childMessage }}</p>
+  </div>
+  
